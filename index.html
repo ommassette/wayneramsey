@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,11 +71,15 @@
             padding: 40px;
             height: 100%;
             transition: border-color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            display: block;
+            text-decoration: none;
+            color: inherit;
         }
 
         .feature-card:hover {
             transform: translateY(-4px);
             border-color: rgba(56, 189, 248, 0.25);
+            color: inherit;
         }
 
         .icon-box {
@@ -143,6 +146,17 @@
             justify-content: center;
             border: 1px solid rgba(255, 255, 255, 0.05);
             color: rgba(255, 255, 255, 0.05);
+        }
+
+        .external-link-icon {
+            font-size: 0.85rem;
+            color: var(--accent-blue);
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+
+        .feature-card:hover .external-link-icon {
+            opacity: 1;
         }
 
         @media (max-width: 991.98px) {
@@ -317,28 +331,40 @@
                 <h2 class="fw-bold display-5 tracking-tight">Past Clientele</h2>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card p-4">
-                        <h5 class="fw-bold text-white mb-0">Marvin Boerger</h5>
-                        <p class="text-secondary small mt-2">Marvin Boerger is a hospitality consultant providing strategic operational improvements and luxury service standards for high-end hotel and restaurant brands.
+                <div class="col-md-6 col-lg-6">
+                    <a href="https://marvinboerger.de" target="_blank" rel="noopener noreferrer" class="feature-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-white mb-0">Marvin Boerger</h5>
+                            <i class="bi bi-box-arrow-up-right external-link-icon"></i>
+                        </div>
+                        <p class="text-secondary small mt-2 mb-0">Marvin Boerger is a hospitality consultant providing strategic operational improvements and luxury service standards for high-end hotel and restaurant brands.
 
 The project scope included the full-stack design and development of a responsive personal website, featuring a professional portfolio, service offerings, client testimonials, and an integrated inquiry contact system.</p>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="feature-card p-4">
-                        <h5 class="fw-bold text-white mb-0">Shafique Akbarali</h5>
-                        <p class="text-secondary small mt-2">Shafique Akbarali is an events manager specializing in coordinating large-scale corporate functions, luxury weddings, and high-profile experiential activations.
+                <div class="col-md-6 col-lg-6">
+                    <a href="https://amazing-decor.co.ke" target="_blank" rel="noopener noreferrer" class="feature-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-white mb-0">Amazing Decor</h5>
+                            <i class="bi bi-box-arrow-up-right external-link-icon"></i>
+                        </div>
+                        <p class="text-secondary small mt-2 mb-0">Amazing Decor specializes in high-end interior styling, event decor, and spatial layout transformations for corporate and private client spaces.
 
-The project scope encompassed the design and development of a professional portfolio website featuring a gallery of past events, service packages, vendor collaboration details, and an automated booking inquiry system.</p>
-                    </div>
+The project scope encompassed the visual design architecture, brand assets, responsive portfolio showcasing past installations, and a dynamic service request interface.</p>
+                    </a>
                 </div>
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="feature-card p-4">
-                        <h5 class="fw-bold text-white mb-0">Client Name Placeholder</h5>
-                        <p class="text-secondary small mt-2">Project scope description goes here.</p>
-                    </div>
-                </div> -->
+                <div class="col-md-6 col-lg-6">
+                    <a href="https://sharpperceptions.co.ke" target="_blank" rel="noopener noreferrer" class="feature-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-white mb-0">Sharp Perceptions</h5>
+                            <i class="bi bi-box-arrow-up-right external-link-icon"></i>
+                        </div>
+                        <p class="text-secondary small mt-2 mb-0">Founded by psychologist Brenda Sharp, Sharp Perceptions provides dedicated mental health, psychological consultancy, and counseling services.
+
+The project scope focused on designing a secure, compassionate online platform featuring clinic services, client resource hub, and an integrated session booking system.</p>
+                    </a>
+                </div>
+               
             </div>
         </div>
     </section>
